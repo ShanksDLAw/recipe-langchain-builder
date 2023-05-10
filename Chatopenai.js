@@ -4,7 +4,7 @@
 const { OpenAI, LLMChain, PromptTemplate} = require('langchain'); // Initialising Langchain using Javascript
 require('dotenv').config(); // Declaring/ initialising API key
 const model = new OpenAI({temperature: 0.98}); //setting the model 
-const api = process.env.OPENAI_API_KEY; // using the APi key
+//const api = process.env.OPENAI_API_KEY; // using the APi key
 const template = "Write me a detailed recipe"; //Declaring a 'template'
 //arranging the prompt template
 const prompt = new PromptTemplate({
